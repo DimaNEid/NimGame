@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Nim Game</title>
+    <link rel="stylesheet" href="../CSS/intro-page.css">
+</head>
+
+<audio id="backgroundMusic" >
+    <source src="../Sounds/stranger.mp3" type="audio/mp3">
+</audio>
+
+<body>
+
+<div class="intro">
+    <img class="introImage" src="../ImageRV/intro.png" alt="Intro Image">
+</div>
+
+<div class="Word">
+    <p> Welcome To Nim Body! </p>
+</div>
+
+<div class="Word1">
+    <p> Choose Which Version
+         You'd Like To Play</p>
+</div>
+
+<div class="buttonContainer">
+    <div class="button1" onclick="navigateToAnotherPage()">Imposter Balls</div>
+    <div class="button2">Pal Coins</div>
+</div>
+
+<div class="kof" onclick="playAudio()">
+    <img class="kofImage" src="../ImageRV/2020.png" alt="kof Image">
+</div>
+
+<div class="click" onclick="playAudio()">
+    <p>Click!!</p>
+</div>
+
+
+<script>
+    function playAudio() {
+        var audio = document.getElementById("backgroundMusic");
+        audio.play();}
+
+    function navigateToAnotherPage() {
+        window.location.href = "Imposter-Rows.html";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 750px;
+
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.cover img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.game {
+    display: none;
+}
+
+.among{
+    position: absolute;
+    top: 380px;
+    left: 65px;
+    width: 250px;
+    height: 350px;
+    display: flex;
+}
+
+.back{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s, cursor 0.3s;
+    cursor: pointer;
+}
+.back:hover {
+    transform: scale(0.80);
+    cursor: pointer;
+}
+
+.n{
+    position: absolute;
+    top: 5px;
+    right: 130px;
+    font-size:100px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+
+.i{
+    position: absolute;
+    top: 105px;
+    right: 152px;
+    font-size:100px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+
+.m{
+    position: absolute;
+    top: 200px;
+    right: 124px;
+    font-size:100px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+.nim{position: absolute;
+    top: 450px;
+    right: 75px;
+    font-size:65px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+
+.desc{
+    position: absolute;
+    top: 48px;
+    left: 124px;
+    width: 250px;
+    height: 350px;
+    font: italic small-caps bold 16px/2 cursive;
+}
+
+.talk{
+    position: absolute;
+    top:50px;
+    left: 110px;
+    width: 280px;
+    height: 300px;
+}
+
+.flexbox-container {
+    position: absolute;
+    width:770px;
+    height: 700px;
+  background: radial-gradient(circle, #FF69B4, #800080); /* Pink to Purple radial gradient */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25%;
+    padding: 20px;
+    margin-left: 150px;
+    left:250px;
+    top:5px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top:30px;
+    left: 465px;
+    z-index: 10;
+    font-size:40px;
+    font-weight: bold;
+    font-family: Arial, serif;
+    color: white;
+
+}
+.on{
+    animation: shadowMove 1s infinite;
+    margin-bottom:47px;
+
+}
+
+
+@keyframes shadowMove {
+    0% {
+        text-shadow: 0 0 5px rgba(35, 33, 33, 0.73);
+    }
+    50% {
+        text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }}
+
+
+
+.button-container1{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    padding:5px 10px;
+    background-color: #4a154d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    font: italic small-caps bold 14px/2 cursive;
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+.button + .button  {
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: #cb659b; /* Change the color as needed for the hover effect */
+
+}
+
+.row {
+    display: flex;
+    margin-top: 10px;
+    height: 80px;
+}
+.ball {
+
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, #dad3da, #6e9dea);
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 149, 255, 0.85), 0 0 10px rgba(0, 149, 255, 0.85);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(0, 149, 255, 0.85), 0 0 20px rgba(0, 149, 255, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 149, 255, 0.85), 0 0 10px rgba(0, 149, 255, 0.85);
+    }
+}
+
+.glow-text {
+    color: #ff00ae; /* Initial dark pink color */
+    animation: gloww 1.5s ease-in-out infinite;
+}
+
+
+@keyframes gloww {
+    0% {
+        color: #ff00ae; /* Dark pink color */
+        text-shadow: 0 0 10px rgb(178, 3, 126);
+    }
+    50% {
+        color: #7700FF; /* Purple color */
+        text-shadow: 0 0 20px rgba(119, 0, 255, 0.7);
+    }
+    100% {
+        color: #fa25b2; /* Dark pink color */
+        text-shadow: 0 0 10px rgb(225, 4, 158);
+    }
+}
+
+@media all and (max-width: 600px ){
+
+
+}
+
+
+

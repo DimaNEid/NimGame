@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Nim Game</title>
+</head>
+<body>
+
+<div class="cover">
+    <img id="coverImage" src="../ImageRV/cover.jpg" alt="Cover Image">
+</div>
+
+
+<div class="game">
+
+    <img class="back" src="../ImageRV/img_2.png" alt="Your Image" onclick="navigateToAnotherPage()">
+    <img class="talk" src="../ImageRV/talk.jpg" alt="Im1">
+    <img class="among" src="../ImageRV/among5.png" alt="Your Image">
+    <div class="desc">
+        <p>It's you against the
+            Imposter!<p>
+        <p> Remove any number
+            of balls from any
+            row. You're not allowed to choose more than one row.</p>
+    </div>
+
+<div class="n">
+   <p class="glow-text">N</p>
+</div>
+    <div class="i">
+        <p class="glow-text">I</p>
+    </div>
+    <div class="m">
+        <p class="glow-text">M</p>
+    </div>
+
+    <div class="nim">
+        <p class="glow-text">GAME</p>
+    </div>
+
+
+    <div class="numbers">
+        <div class="one"><p class="on">1</p></div>
+        <div class="two"><p class="on">2</p></div>
+        <div class="three"><p class="on">3</p></div>
+        <div class="four"><p  class="on">4</p></div>
+    </div>
+
+    <audio id="clickSound1" >
+        <source src="../Sounds/soundd.wav" type="audio/mpeg">
+
+    </audio>
+    <audio id="clickSound2" >
+        <source src="../Sounds/sound1.wav" type="audio/mpeg">
+
+    </audio>
+
+    <div class="flexbox-container">
+
+        <div class="row" id="row1">
+            <div class="ball" id="ball1r1"></div>
+        </div>
+        <div class="row" id="row2">
+            <div class="ball" id="ball1r2"></div>
+            <div class="ball" id="ball2r2"></div>
+            <div class="ball" id="ball3r2"></div>
+        </div>
+        <div class="row" id="row3">
+            <div class="ball" id="ball1r3"></div>
+            <div class="ball" id="ball2r3"></div>
+            <div class="ball" id="ball3r3"></div>
+            <div class="ball" id="ball4r3"></div>
+            <div class="ball" id="ball5r3"></div>
+
+        </div>
+        <div class="row" id="row4" >
+            <div class="ball" id="ball1r4"></div>
+            <div class="ball" id="ball2r4"></div>
+            <div class="ball" id="ball3r4"></div>
+            <div class="ball" id="ball4r4"></div>
+            <div class="ball" id="ball5r4"></div>
+            <div class="ball" id="ball6r4"></div>
+            <div class="ball" id="ball7r4"></div>
+        </div>
+
+        <div class="button-container1">
+            <button class="button" id="br1" onclick="playClickSound()">Row1</button>
+            <button class="button" id="br2" onclick="playClickSound()">Row2</button>
+            <button class="button" id="br3" onclick="playClickSound()">Row3  </button>
+            <button class="button" id="br4" onclick="playClickSound()">Row4  </button>
+        </div>
+
+        <div class="button-container">
+            <button class="button" id="pcTurn" onclick="playClickSound()">PC  Turn</button>
+            <button class="button" id="playAgain" onclick="playClickSound1()"  >Reset</button>
+            <button class="button" id="level1" onclick="playClickSound1()">Level  1  </button>
+            <button class="button" id="level2" onclick="playClickSound1()">Level  2</button>
+            <button class="button" id="level3" onclick="playClickSound1()">Level  3</button>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="../Java%20Script/script.js"></script>
+<script src="../Java%20Script/design.js"></script>
+</body>
+</html>
